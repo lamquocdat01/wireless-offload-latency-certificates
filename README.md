@@ -63,8 +63,21 @@ python code/p3_analysis.py
 python code/compare_numbers.py results/numbers.json /tmp/numbers_released.json
 ```
 
-`run_full.py` uses two worker processes and stops itself if free RAM drops below 6 GB. Timings measured on
-an i7-1185G7 laptop are in the release notes of the tag.
+`run_full.py` uses two worker processes and stops itself if free RAM drops below 6 GB.
+
+Measured from a clean clone of this tag on an i7-1185G7 laptop (32 GB), with the CPU shared with other
+jobs (so these are upper figures; the original headline grid took 647 s on a less loaded machine):
+
+| Step | Time |
+|---|---|
+| Level 1 (tests + `p3_analysis.py` + comparison) | 26 s |
+| `parse_det6g.py` / `p2_grid_owd.py` / `service_curve.py` / `p2_fec_sensitivity.py` | 12 s / 2 s / 32 s / 42 s |
+| `run_full.py` indep / ge_time / ge_trace | 1 445 s / 953 s / 861 s |
+| `p3_analysis.py` | 38 s |
+| **Level 2 total** (after the download) | **3 385 s (56 min)** |
+
+Both levels reproduced `results/numbers.json` key by key (1 107 of 1 107 keys), and level 2 regenerated
+every other file in `results/` byte for byte.
 
 Inputs that level 2 does not regenerate (they need data that cannot be redistributed or were produced
 upstream): `p1_c_estimate.json` (frame sizes × SIGCOMM'21 throughput), `p1_burst_tax.json`,
