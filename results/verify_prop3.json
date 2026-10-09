@@ -1,0 +1,110 @@
+{
+ "seed": 42,
+ "identity": {
+  "random_envelopes_checks": 2400,
+  "max_abs_err": 2.2737367544323206e-13,
+  "c_le_1_Q_ne_c": 0,
+  "thm1_curves_max_abs_err_vs_long_grid": 1.7763568394002505e-15
+ },
+ "cor31": {
+  "checked": 101,
+  "violations": 0
+ },
+ "burst_tax_summary": {
+  "1.07": {
+   "cells_gate_rate_lt_1_over_c": 25,
+   "gate_pure_sigma_range": [
+    11.635514018712911,
+    175.26168224299943
+   ],
+   "token_bucket_b4_sigma_range": [
+    0.3271028037386259,
+    175.26168224299943
+   ],
+   "periodic_sigma_range": [
+    0.06542056074772518,
+    0.26168224299067333
+   ],
+   "gate_over_periodic_Q_ratio_range": [
+    11.859649122823814,
+    146.14049586776042
+   ]
+  },
+  "1.25": {
+   "cells_gate_rate_lt_1_over_c": 25,
+   "gate_pure_sigma_range": [
+    58.200000000015734,
+    965.8000000001081
+   ],
+   "token_bucket_b4_sigma_range": [
+    1.0000000000002274,
+    965.8000000001081
+   ],
+   "periodic_sigma_range": [
+    0.20000000000004547,
+    0.8000000000000114
+   ],
+   "gate_over_periodic_Q_ratio_range": [
+    49.33333333334458,
+    597.7142857142919
+   ]
+  },
+  "1.5": {
+   "cells_gate_rate_lt_1_over_c": 24,
+   "gate_pure_sigma_range": [
+    115.3333333333498,
+    1648.9999999999095
+   ],
+   "token_bucket_b4_sigma_range": [
+    1.6666666666674246,
+    500.6666666666283
+   ],
+   "periodic_sigma_range": [
+    0.33333333333337123,
+    0.6666666666667425
+   ],
+   "gate_over_periodic_Q_ratio_range": [
+    87.25000000000243,
+    989.9999999999008
+   ]
+  },
+  "2.17": {
+   "cells_gate_rate_lt_1_over_c": 15,
+   "gate_pure_sigma_range": [
+    291.38248847927076,
+    2013.7741935481063
+   ],
+   "token_bucket_b4_sigma_range": [
+    2.6958525345622775,
+    4.009216589861921
+   ],
+   "periodic_sigma_range": [
+    0.5391705069124555,
+    0.6958525345622775
+   ],
+   "gate_over_periodic_Q_ratio_range": [
+    189.961077844315,
+    1245.6011396009358
+   ]
+  },
+  "3.0": {
+   "cells_gate_rate_lt_1_over_c": 12,
+   "gate_pure_sigma_range": [
+    595.3333333333319,
+    2643.3333333332625
+   ],
+   "token_bucket_b4_sigma_range": [
+    3.333333333333428,
+    37.66666666666713
+   ],
+   "periodic_sigma_range": [
+    0.6666666666666856,
+    0.6666666666667993
+   ],
+   "gate_over_periodic_Q_ratio_range": [
+    357.79999999998284,
+    1586.5999999998312
+   ]
+  }
+ }
+}

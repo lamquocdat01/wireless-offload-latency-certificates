@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/DET6G_COTS5G/
+data/derived/owd_*.npy
+data/derived/grid_*.npy
+results/p0_owd_ccdf.png
+results/*.log

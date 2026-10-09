@@ -1,0 +1,22 @@
+{
+ "process": {
+  "keys_identical": true,
+  "vs_run_corr_max_abs_diff": 0.1458057165145874,
+  "vs_run_corr_n_diff_gt_1e-6": 13041,
+  "vs_run_corr_bitwise_identical": false
+ },
+ "video": {
+  "keys_identical": true,
+  "vs_run_corr_max_abs_diff": 0.0,
+  "vs_run_corr_n_diff_gt_1e-6": 0,
+  "vs_run_corr_bitwise_identical": true
+ },
+ "video_repeat": {
+  "keys_identical": true,
+  "vs_run_corr_max_abs_diff": 0.16033373773097992,
+  "vs_run_corr_n_diff_gt_1e-6": 13052,
+  "vs_run_corr_bitwise_identical": false
+ },
+ "seeded_run_to_run_max_abs_diff": 0.16033373773097992,
+ "note": "Order in ONE process: process-seed pass, then per-video-seed pass (matches run_corr bit-exactly), then an identical per-video-seed pass (does NOT match: 13 052 frames, max 0.160). The gate therefore carries process state that numpy/random seeds do not control; see p3_seed0_check_fresh_video_video_repeat.json for the fresh-process test."
+}

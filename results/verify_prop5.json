@@ -1,0 +1,132 @@
+{
+ "seed": 42,
+ "coverage": {
+  "exponential|n=20000|eps=0.01": {
+   "reps": 1000,
+   "fail_rate": 0.028,
+   "fail_rate_cp97.5": 0.04021488737384334,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.532
+  },
+  "exponential|n=20000|eps=0.001": {
+   "reps": 1000,
+   "fail_rate": 0.023,
+   "fail_rate_cp97.5": 0.03431233761285442,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.551
+  },
+  "exponential|n=200000|eps=0.001": {
+   "reps": 300,
+   "fail_rate": 0.03,
+   "fail_rate_cp97.5": 0.05618354824161587,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.55
+  },
+  "lognormal_s1|n=20000|eps=0.01": {
+   "reps": 1000,
+   "fail_rate": 0.023,
+   "fail_rate_cp97.5": 0.03431233761285442,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.522
+  },
+  "lognormal_s1|n=20000|eps=0.001": {
+   "reps": 1000,
+   "fail_rate": 0.019,
+   "fail_rate_cp97.5": 0.029512401625097755,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.556
+  },
+  "lognormal_s1|n=200000|eps=0.001": {
+   "reps": 300,
+   "fail_rate": 0.03333333333333333,
+   "fail_rate_cp97.5": 0.06044532220126553,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.48
+  },
+  "pareto_2.5|n=20000|eps=0.01": {
+   "reps": 1000,
+   "fail_rate": 0.021,
+   "fail_rate_cp97.5": 0.031922335180415505,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.538
+  },
+  "pareto_2.5|n=20000|eps=0.001": {
+   "reps": 1000,
+   "fail_rate": 0.018,
+   "fail_rate_cp97.5": 0.028299041249019146,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.562
+  },
+  "pareto_2.5|n=200000|eps=0.001": {
+   "reps": 300,
+   "fail_rate": 0.013333333333333334,
+   "fail_rate_cp97.5": 0.03378489626191786,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.45
+  },
+  "discrete_ties|n=20000|eps=0.01": {
+   "reps": 1000,
+   "fail_rate": 0.0,
+   "fail_rate_cp97.5": 0.003682083896865671,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.0
+  },
+  "discrete_ties|n=20000|eps=0.001": {
+   "reps": 1000,
+   "fail_rate": 0.0,
+   "fail_rate_cp97.5": 0.003682083896865671,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.0
+  },
+  "discrete_ties|n=200000|eps=0.001": {
+   "reps": 300,
+   "fail_rate": 0.0,
+   "fail_rate_cp97.5": 0.012220974694293552,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.0
+  },
+  "det6g_s1UL_empirical|n=20000|eps=0.01": {
+   "reps": 1000,
+   "fail_rate": 0.021,
+   "fail_rate_cp97.5": 0.031922335180415505,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.496
+  },
+  "det6g_s1UL_empirical|n=20000|eps=0.001": {
+   "reps": 1000,
+   "fail_rate": 0.025,
+   "fail_rate_cp97.5": 0.036684823051923054,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.536
+  },
+  "det6g_s1UL_empirical|n=200000|eps=0.001": {
+   "reps": 300,
+   "fail_rate": 0.013333333333333334,
+   "fail_rate_cp97.5": 0.03378489626191786,
+   "delta": 0.025,
+   "naive_quantile_fail_rate": 0.53
+  }
+ },
+ "loss": {
+  "p=0.0012|n=1000000": {
+   "reps": 4000,
+   "fail_rate": 0.02475,
+   "delta": 0.025
+  },
+  "p=0.001|n=200000": {
+   "reps": 4000,
+   "fail_rate": 0.02075,
+   "delta": 0.025
+  },
+  "p=0.005|n=100000": {
+   "reps": 4000,
+   "fail_rate": 0.026,
+   "delta": 0.025
+  }
+ },
+ "union": {
+  "reps": 300,
+  "fail_rate": 0.0,
+  "bound_2delta": 0.05
+ }
+}

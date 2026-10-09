@@ -1,0 +1,24 @@
+{
+ "rows_regen": 18425,
+ "rows_run_corr": 18425,
+ "keys_identical": true,
+ "g_t_identical": true,
+ "score_max_abs_diff": 0.1458057165145874,
+ "score_n_diff_gt_0": 13103,
+ "score_n_diff_gt_1e-6": 13041,
+ "score_bitwise_identical": false,
+ "events_regen": 393,
+ "events_run_corr": 393,
+ "match_100pct": false,
+ "diagnosis": {
+  "spearman": 0.9903975441213047,
+  "abs_diff_median": 0.00038123130798339844,
+  "gate_decision_flip_rate_over_25_tau": [
+   0.0011397557666214383,
+   0.027788331071913162,
+   0.04385345997286296
+  ],
+  "cause": "gate pass uses an unseeded RNG in a dependency: with numpy/random seeded to 0, two runs are identical (max diff 0.0); unseeded runs differ by up to 0.030 from frame 15 on (same process, same inputs)",
+  "run_to_run_unseeded_maxdiff_I_BS_01": 0.030476659536361694
+ }
+}
