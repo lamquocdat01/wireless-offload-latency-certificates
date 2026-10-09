@@ -1,0 +1,21 @@
+Data licenses for wireless-offload-latency-certificates
+(code is MIT, see LICENSE; this file covers data/ and results/)
+
+1. LASIESTA-derived data -- Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+   https://creativecommons.org/licenses/by-sa/4.0/
+   Applies to: the rows with dataset == "LASIESTA" in data/derived/activations_K2_a0.05.parquet
+   (motion-gate scores and object indicators computed from LASIESTA videos).
+   Source: LASIESTA database, Grupo de Tratamiento de Imagenes (GTI), Universidad Politecnica de Madrid,
+   http://www.gti.ssr.upm.es/data/lasiesta. No LASIESTA frame is redistributed.
+
+2. CDnet2014 and BMC -- cite-only, no license published.
+   Applies to: the rows with dataset == "CDnet2014" or "BMC" in the same file. Cite the original datasets.
+   No frame is redistributed.
+
+3. Results derived from the DETERMINISTIC6G COTS-5G measurements -- Creative Commons Attribution 4.0
+   International (CC BY 4.0), inherited from the source.
+   https://creativecommons.org/licenses/by/4.0/
+   Source: Zenodo record 10390211, DOI 10.5281/zenodo.10390211. The raw traces are not redistributed.
+
+4. Throughput quantiles in results/p1_c_estimate.json are summary statistics of the SIGCOMM 2021
+   measurement artifact (DOI 10.1145/3452296.3472923); its traces are not redistributed.

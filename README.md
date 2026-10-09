@@ -25,8 +25,7 @@ derived from DET6G are regenerated locally by level 2 below.
 
 **Gate scores.** BMC and CDnet2014 scores are the published scores of the motion gate (DOI
 [10.1109/JIOT.2026.3740931](https://doi.org/10.1109/JIOT.2026.3740931)); LASIESTA scores come from a
-fixed run of the same gate on time-ordered detections. See the supplement, Sec. S8, and
-`results/p3_seed0_check*.json` for what a re-run of the gate does and does not reproduce.
+fixed run of the same gate on time-ordered detections. From the supplement, Sec. S8: "The published gate keeps internal state across passes over the corpus. Running it twice on the same time-ordered detections in one process, with the numpy and random generators seeded to 0 before each video, the second pass reproduces all 18 425 released scores bit for bit (0 differences; checked in 2 independent processes). A single pass in a fresh process reproduces the frame keys, the object indicators and all 393 events exactly, but 13 041 scores differ (maximum 0.15, Spearman 0.990); a third pass drifts again (13 052 differences). All experiments read the released file." Evidence: `results/p3_seed0_check*.json`.
 
 ## Reproduce
 
@@ -83,7 +82,14 @@ Inputs that level 2 does not regenerate (they need data that cannot be redistrib
 upstream): `p1_c_estimate.json` (frame sizes × SIGCOMM'21 throughput), `p1_burst_tax.json`,
 `p1_quality_grid.csv`, `p0_sanity_b_cells.csv`, and the activation corpus.
 
-## Licence
+## Data provenance & licenses
 
-Code: MIT (see `LICENSE`). Derived data in `data/` and `results/`: CC BY 4.0, inheriting the licence of the
-DETERMINISTIC6G traces where they derive from them.
+| Material in this repository | Source | License |
+|---|---|---|
+| Code (`code/`, `tests/`) | this work | MIT (`LICENSE`) |
+| Rows with `dataset == "LASIESTA"` in `data/derived/activations_K2_a0.05.parquet` (gate scores and object indicators derived from LASIESTA) | LASIESTA database, GTI, Universidad Politécnica de Madrid, http://www.gti.ssr.upm.es/data/lasiesta | **CC BY-SA 4.0** (`LICENSE-DATA`) |
+| Rows with `dataset` = `CDnet2014` or `BMC` in the same file | CDnet2014 (changedetection.net); BMC (Background Models Challenge) | cite-only, no license published; cite the original datasets |
+| Results derived from the DETERMINISTIC6G traces (`results/`, per-session statistics, grids, certificates) | Zenodo, DOI 10.5281/zenodo.10390211 | CC BY 4.0, inherited (`LICENSE-DATA`) |
+| Throughput quantiles in `results/p1_c_estimate.json` | Narayanan et al., SIGCOMM 2021, DOI 10.1145/3452296.3472923 | summary statistics only; the traces are not re-hosted |
+
+No video frame, image or raw trace of any dataset is re-hosted here.
