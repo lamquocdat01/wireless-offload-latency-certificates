@@ -1,9 +1,11 @@
 # wireless-offload-latency-certificates
 
-Code and derived data for the manuscript *Admitting Content-Gated Camera Traffic onto 5G Uplinks:
-Frame-Level Detection-Latency Certificates with Shaping and Erasure Coding* (Dat Lam Quoc).
+Code and derived data for the manuscript *Admitting Content-Gated Camera Traffic over Mobile 5G Uplinks:
+Frame-Level Detection-Latency Certificates with Shaping and Erasure Coding* (Dat Lam Quoc), the IEEE TVT
+version (tag `v2.0.0-tvt-submission`). An earlier version of the manuscript was titled *Admitting Content-Gated
+Camera Traffic onto 5G Uplinks: ...* (tag `v1.0.0-submission`); code, data and results are identical in both tags.
 
-Every number printed in the paper and its supplement is a key of `results/numbers.json`, written by
+Every number printed in the paper and its appendices is a key of `results/numbers.json`, written by
 `code/p3_analysis.py`. The LaTeX sources print only macros generated from that file.
 
 ## Contents
