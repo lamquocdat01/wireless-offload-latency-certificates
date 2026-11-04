@@ -610,4 +610,9 @@ def figs_rest(df, grid, tcal, surv, gefit, rst, price, m_levels, C_PRICE, tt, UL
 
 
 if __name__ == "__main__":
+    import argparse
+    _ap = argparse.ArgumentParser(description="Frozen final numbers (results/numbers.json) and the six paper figures.")
+    _ap.add_argument("--seed", type=int, default=SEED,
+                     help="seed of the session bootstrap (default 42 = the paper; numbers.json is checked at 42)")
+    SEED = _ap.parse_args().seed
     main()

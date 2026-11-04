@@ -1,9 +1,10 @@
 # wireless-offload-latency-certificates
 
 Code and derived data for the manuscript *Frame-Level Detection-Latency Certificates for Content-Gated
-Mobile Camera Uplinks in 5G: Shaping, Erasure Coding and Admission Control* (Dat Lam Quoc), the IEEE TVT
+Mobile Camera Uplinks in 5G: Shaping, Erasure Coding, and Admission Control* (Dat Lam Quoc), the IEEE TVT
 version (tag `v2.0.0-tvt-submission`). An earlier version of the manuscript was titled *Admitting Content-Gated
-Camera Traffic onto 5G Uplinks: ...* (tag `v1.0.0-submission`); code, data and results are identical in both tags.
+Camera Traffic onto 5G Uplinks: ...* (tag `v1.0.0-submission`); data and results are identical in both tags. The only code change in
+`v2.0.0-tvt-submission` is an explicit `--seed` option of `code/p3_analysis.py` (default 42, the paper's seed).
 
 Every number printed in the paper and its appendices is a key of `results/numbers.json`, written by
 `code/p3_analysis.py`. The LaTeX sources print only macros generated from that file.
@@ -31,14 +32,15 @@ fixed run of the same gate on time-ordered detections. From the supplement, Sec.
 
 ## Reproduce
 
-Python 3.11; `python -m pip install -r requirements.txt`. All runs use seed 42.
+Python 3.11; `python -m pip install -r requirements.txt`. All runs use seed 42; `p3_analysis.py` takes it
+explicitly as `--seed 42`.
 
 ### Level 1 — numbers and figures from the released derived results (≈ 5 min)
 
 ```bash
 python -m pytest -q tests
 cp results/numbers.json /tmp/numbers_released.json
-python code/p3_analysis.py
+python code/p3_analysis.py --seed 42
 python code/compare_numbers.py results/numbers.json /tmp/numbers_released.json   # must print 0 differences
 git status --short results/                                                     # numbers.json unchanged
 ```
@@ -60,7 +62,7 @@ python code/p2_fec_sensitivity.py   # Gilbert-Elliott fits -> results/p2_fec_sen
 python code/run_full.py --rmodel indep      # independence column  -> results/p2_main_*
 python code/run_full.py --rmodel ge_time    # headline             -> results/p3_main_getime_*
 python code/run_full.py --rmodel ge_trace   # GE trace-scale column -> results/p3_main_getrace_*
-python code/p3_analysis.py
+python code/p3_analysis.py --seed 42
 python code/compare_numbers.py results/numbers.json /tmp/numbers_released.json
 ```
 
