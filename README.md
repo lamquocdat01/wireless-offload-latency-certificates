@@ -2,12 +2,16 @@
 
 Code and derived data for the manuscript *Frame-Level Detection-Latency Certificates for Content-Gated
 Mobile Camera Uplinks in 5G: Shaping, Erasure Coding, and Admission Control* (Dat Lam Quoc), the IEEE TVT
-version (tag `v2.0.0-tvt-submission`). An earlier version of the manuscript was titled *Admitting Content-Gated
+version (tag `v2.0.1-tvt-submission`). An earlier version of the manuscript was titled *Admitting Content-Gated
 Camera Traffic onto 5G Uplinks: ...* (tag `v1.0.0-submission`); data and results are identical in both tags. The only code change in
 `v2.0.0-tvt-submission` is an explicit `--seed` option of `code/p3_analysis.py` (default 42, the paper's seed).
+`v2.0.1-tvt-submission` adds keys to `results/numbers.json` for Table IV (`ho*ub`, `ho*ubMax`: the larger of the pooled
+Clopper-Pearson limit and the session-bootstrap limit), computed from existing results. No experiment was re-run, and the
+1 107 earlier keys keep their values.
 
-Every number printed in the paper and its appendices is a key of `results/numbers.json`, written by
-`code/p3_analysis.py`. The LaTeX sources print only macros generated from that file.
+Numbers derived from the traces and the replay are keys of `results/numbers.json`, written by `code/p3_analysis.py`;
+the LaTeX sources print them through macros generated from that file. Counts of the theorem checks (for example 54/54 and
+36/36) and fixed parameters are written directly in the text; the checks are in `code/verify_*.py` and `results/verify_*.json`.
 
 ## Contents
 
@@ -79,8 +83,8 @@ jobs (so these are upper figures; the original headline grid took 647 s on a les
 | `p3_analysis.py` | 38 s |
 | **Level 2 total** (after the download) | **3 385 s (56 min)** |
 
-Both levels reproduced `results/numbers.json` key by key (1 107 of 1 107 keys), and level 2 regenerated
-every other file in `results/` byte for byte.
+Measured on `v2.0.0-tvt-submission`: both levels reproduced `results/numbers.json` key by key (1 107 of 1 107 keys), and
+level 2 regenerated every other file in `results/` byte for byte. `v2.0.1-tvt-submission` was re-checked at level 1.
 
 Inputs that level 2 does not regenerate (they need data that cannot be redistributed or were produced
 upstream): `p1_c_estimate.json` (frame sizes × SIGCOMM'21 throughput), `p1_burst_tax.json`,

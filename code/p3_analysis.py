@@ -378,11 +378,15 @@ def main() -> None:
             put(k + "vLo", t["ci_videos"][0]); put(k + "vHi", t["ci_videos"][1])
             put(k + "ok", f"{t['sessions_rate_le_eps']}/{t['sessions']}", "frac")
             put(k + "maxs", t["max_session_rate"])
+            put(k + "ub", max(t["cp_upper_95"], t["ci_sessions"][1]))   # larger of pooled CP and session bootstrap
             for mname, mk in (("indep", "I"), ("ge_trace", "T")):
                 ts = sens[mname].get(f"{d}|eps_lat={float(e):g}|N={N}")
                 if ts:
                     put(k + mk + "rate", ts["rate"]); put(k + mk + "cp", ts["cp_upper_95"])
                     put(k + mk + "ok", f"{ts['sessions_rate_le_eps']}/{ts['sessions']}", "frac")
+    for tag, e in (("ULA", 1e-3), ("ULB", 1e-4)):                    # Table IV: largest conservative limit, uplink
+        put(f"ho{tag}ubMax", max(max(t["cp_upper_95"], t["ci_sessions"][1])
+                                 for t in (tab[f"UL|eps_lat={e:g}|N={N}"] for N in N_GRID)))
     for e, et in (("0.01", "X"), ("0.001", "A"), ("0.0001", "B")):   # supplement: packet-level SLA (CP1 #1)
         sm = svc["summary"][e]
         tot = [svc["sessions"][s]["eps"][e]["full"]["eps_total"] for s in grid]

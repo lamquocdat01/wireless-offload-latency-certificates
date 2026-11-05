@@ -314,6 +314,11 @@
   "tex": "\\ensuremath{1.7\\times10^{-4}}",
   "pdf": "1.7×10−4"
  },
+ "hoULAaub": {
+  "value": 8.71243505041185e-05,
+  "tex": "\\ensuremath{8.7\\times10^{-5}}",
+  "pdf": "8.7×10−5"
+ },
  "hoULAaIrate": {
   "value": 6.716736309446665e-05,
   "tex": "\\ensuremath{6.7\\times10^{-5}}",
@@ -398,6 +403,11 @@
   "value": 0.0003550866157709184,
   "tex": "\\ensuremath{3.6\\times10^{-4}}",
   "pdf": "3.6×10−4"
+ },
+ "hoULAbub": {
+  "value": 8.079431073228073e-05,
+  "tex": "\\ensuremath{8.1\\times10^{-5}}",
+  "pdf": "8.1×10−5"
  },
  "hoULAbIrate": {
   "value": 0.00010175467223536681,
@@ -484,6 +494,11 @@
   "tex": "\\ensuremath{1.0\\times10^{-4}}",
   "pdf": "1.0×10−4"
  },
+ "hoULAcub": {
+  "value": 2.481894926245833e-05,
+  "tex": "\\ensuremath{2.5\\times10^{-5}}",
+  "pdf": "2.5×10−5"
+ },
  "hoULAcIrate": {
   "value": 0.00013544038172802323,
   "tex": "\\ensuremath{1.4\\times10^{-4}}",
@@ -568,6 +583,11 @@
   "value": 0.00034252223223007344,
   "tex": "\\ensuremath{3.4\\times10^{-4}}",
   "pdf": "3.4×10−4"
+ },
+ "hoULBaub": {
+  "value": 0.00016231653227475183,
+  "tex": "\\ensuremath{1.6\\times10^{-4}}",
+  "pdf": "1.6×10−4"
  },
  "hoULBaIrate": {
   "value": 0.0004321739139034403,
@@ -654,6 +674,11 @@
   "tex": "\\ensuremath{8.2\\times10^{-4}}",
   "pdf": "8.2×10−4"
  },
+ "hoULBbub": {
+  "value": 0.00025467887497404845,
+  "tex": "\\ensuremath{2.5\\times10^{-4}}",
+  "pdf": "2.5×10−4"
+ },
  "hoULBbIrate": {
   "value": 0.0006712974481915461,
   "tex": "\\ensuremath{6.7\\times10^{-4}}",
@@ -738,6 +763,11 @@
   "value": 0.0,
   "tex": "0",
   "pdf": "0"
+ },
+ "hoULBcub": {
+  "value": 2.92334870419955e-06,
+  "tex": "\\ensuremath{2.9\\times10^{-6}}",
+  "pdf": "2.9×10−6"
  },
  "hoULBcIrate": {
   "value": 0.0010917083821545192,
@@ -824,6 +854,11 @@
   "tex": "\\ensuremath{1.3\\times10^{-4}}",
   "pdf": "1.3×10−4"
  },
+ "hoDLAaub": {
+  "value": 9.617009110166738e-05,
+  "tex": "\\ensuremath{9.6\\times10^{-5}}",
+  "pdf": "9.6×10−5"
+ },
  "hoDLAaIrate": {
   "value": 4.676916041562194e-05,
   "tex": "\\ensuremath{4.7\\times10^{-5}}",
@@ -908,6 +943,11 @@
   "value": 0.0,
   "tex": "0",
   "pdf": "0"
+ },
+ "hoDLAbub": {
+  "value": 7.67061614918415e-06,
+  "tex": "\\ensuremath{7.7\\times10^{-6}}",
+  "pdf": "7.7×10−6"
  },
  "hoDLAbIrate": {
   "value": 1.775392551974617e-05,
@@ -994,6 +1034,11 @@
   "tex": "0",
   "pdf": "0"
  },
+ "hoDLAcub": {
+  "value": 7.671696541178612e-06,
+  "tex": "\\ensuremath{7.7\\times10^{-6}}",
+  "pdf": "7.7×10−6"
+ },
  "hoDLAcIrate": {
   "value": 0.00031971094071138223,
   "tex": "\\ensuremath{3.2\\times10^{-4}}",
@@ -1078,6 +1123,11 @@
   "value": 0.00010390015195397224,
   "tex": "\\ensuremath{1.0\\times10^{-4}}",
   "pdf": "1.0×10−4"
+ },
+ "hoDLBaub": {
+  "value": 7.273671905442266e-05,
+  "tex": "\\ensuremath{7.3\\times10^{-5}}",
+  "pdf": "7.3×10−5"
  },
  "hoDLBaIrate": {
   "value": 3.376947914474898e-05,
@@ -1164,6 +1214,11 @@
   "tex": "\\ensuremath{1.3\\times10^{-5}}",
   "pdf": "1.3×10−5"
  },
+ "hoDLBbub": {
+  "value": 1.203083383621798e-05,
+  "tex": "\\ensuremath{1.2\\times10^{-5}}",
+  "pdf": "1.2×10−5"
+ },
  "hoDLBbIrate": {
   "value": 0.0005706792605011325,
   "tex": "\\ensuremath{5.7\\times10^{-4}}",
@@ -1249,6 +1304,11 @@
   "tex": "\\ensuremath{7.6\\times10^{-5}}",
   "pdf": "7.6×10−5"
  },
+ "hoDLBcub": {
+  "value": 4.565620232856881e-05,
+  "tex": "\\ensuremath{4.6\\times10^{-5}}",
+  "pdf": "4.6×10−5"
+ },
  "hoDLBcIrate": {
   "value": 0.0002182104208162592,
   "tex": "\\ensuremath{2.2\\times10^{-4}}",
@@ -1278,6 +1338,16 @@
   "value": "5/5",
   "tex": "5/5",
   "pdf": "5/5"
+ },
+ "hoULAubMax": {
+  "value": 8.71243505041185e-05,
+  "tex": "\\ensuremath{8.7\\times10^{-5}}",
+  "pdf": "8.7×10−5"
+ },
+ "hoULBubMax": {
+  "value": 0.00025467887497404845,
+  "tex": "\\ensuremath{2.5\\times10^{-4}}",
+  "pdf": "2.5×10−4"
  },
  "pkXrmOK": {
   "value": "15/18",
